@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, center {
+            width: 40%;
+            border-collapse: collapse;
+            font-family: Verdana;
+            font-size: 11pt;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 2px;
+        }
+        th, td {
+            text-align: center;
+        }
+        .td1 {
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+            background-color: #88b8d8; 
+            font-size: 11pt;
+            font-weight: bold; 
+            padding: 2px;
+        }
+        .supply {
+            background-color: rgb(255, 222, 37);
+            width: 5%;
+        }
+        .gray, th {
+            background-color: #e2e2e2;
+        }
+
+        /** **/
+
+        input[type="text"] {
+            width: 20%; 
+            padding: 5px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+    
+
+        input[type="email"] {
+            width: 20%; 
+            padding: 5px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+    
+        
+        input[type="tel"] {
+            width: 10%; 
+            padding: 5px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+    
+        
+        textarea {
+            width: 25%;
+            padding: 30px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+    
+        
+        input[type="submit"] {
+            padding: 10px 18px; 
+            background-color: rgb(171, 180, 205); 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            font-size: 10pt;
+        }
+        
+        small {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th colspan="6" class="center">INVENTORY SYSTEMS</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Supplier</th>
+                <th>Date</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10001</td>
+                <td class="td1">Pure Foods Corned Beef (pc)</td>
+                <td>1000</td>
+                <td rowspan = "8" class="supply"><b>KSK</b></td>
+                <td rowspan = "2">4/24/2024</td>
+                <td rowspan = "8"><img src = "boybawang.png" width = "150px" height = "150px"></td>
+            </tr>
+            <tr>
+                <td>10002</td>
+                <td class="td1">Pure Foods Corned Beef (pack)</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td bgcolor="#e2e2e2">10003</td>
+                <td bgcolor="#e2e2e2" class="td1">Pure Foods Corned Beef (pc)</td>
+                <td bgcolor="#e2e2e2">3000</td>
+                <td bgcolor="#e2e2e2" rowspan="2">4/25/2024</td>
+            </tr>
+            <tr>
+                <td bgcolor="#e2e2e2">10004</td>
+                <td bgcolor="#e2e2e2" class="td1">Pure Foods Corned Beef (pack)</td>
+                <td bgcolor="#e2e2e2"><font color="red">150</font></td>
+            </tr>
+            <tr>
+                <td>10005</td>
+                <td class="td1">Pure Foods Corned Beef (pc)</td>
+                <td>4000</td>
+                <td rowspan = "2">4/26/2024</td>
+            </tr>
+            <tr>
+                <td>10006</td>
+                <td class="td1">Pure Foods Corned Beef (pack)</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td bgcolor="#e2e2e2">10007</td>
+                <td bgcolor="#e2e2e2" class="td1">Pure Foods Corned Beef (pc)</td>
+                <td bgcolor="#e2e2e2">3000</td>
+                <td bgcolor="#e2e2e2" rowspan = "2">4/27/2024</td>
+            </tr>
+            <tr>
+                <td bgcolor="#e2e2e2">10008</td>
+                <td bgcolor="#e2e2e2" class="td1">Pure Foods Corned Beef (pack)</td>
+                <td bgcolor="#e2e2e2">210</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <br>
+    <br>
+    <br>
+    </body>
+    </html>
+<form name = "Login Form" action = "login.php">Your Name*<br>
+    <input type = "text" name = "name" style="width: 500px"><br>Email*<br>
+    <input type = "email" name = "email" style="width: 500px"><br>Contact No.*<br>
+    <input type = "tel" name = "contact number" style="width: 250px"><br>Message<br>
+    <textarea style="width: 500px"> </textarea> </textarea><br>required field*<br><br>
+    <input type = "Submit" value="Send">
+</form>
+</body>
+</html>
